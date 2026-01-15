@@ -29,3 +29,21 @@ type UserResponse struct {
 	Email     string `json:"email"`
 	CreatedAt string `json:"created_at"`
 }
+
+// RegisterInput dados necessários para registro
+type RegisterInput struct {
+	Username string `json:"username"`
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
+
+// LoginInput dados necessários para login
+type LoginInput struct {
+	Email    string `json:"email"`
+	Password string `json:"password"`
+}
+
+// RefreshTokenInput dados para refresh
+type RefreshTokenInput struct {
+	RefreshToken string `json:"refresh_token"`
+}
